@@ -1,14 +1,13 @@
 version: 2
 jobs:
   build:
-    main.cpp
     docker:
-      -image: debian:stretch
-     steps:
-      -checkout
-      -run:
-        name: Greeting
-        command: echo Hello, Word.
-       -run:
-        name: Print the Current Time
-        command: date
+      - image: debian:stretch
+    steps:
+      - checkout
+      - run:
+          name: Greeting
+          command: echo Hello, world.
+      - run:
+          name: Print the Current Time
+          command: date
