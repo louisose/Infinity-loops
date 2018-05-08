@@ -1,6 +1,7 @@
 version: 2
 jobs:
   build:
+    main.cpp
     docker:
       -image: debian:stretch
      steps:
