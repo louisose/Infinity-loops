@@ -4,8 +4,8 @@ jobs:
     docker:
       - image: debian:stretch
     steps:
-      - run: sudo apt-get install gcc
       - checkout
+      - run: sudo apt-get install gcc
       - run:
           name: Greeting
           command: echo Hello, world.
