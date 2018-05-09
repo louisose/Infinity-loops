@@ -11,6 +11,4 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
-        - run:
-          name: Software
-          command: main.cpp
+  
